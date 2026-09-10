@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCI Application Registry</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site">
+      <h1>NCI Application Registry</h1>
+      <p>Which applications exist, how they are deployed, and whether they are healthy.</p>
+    </header>
+
+    <main>
+      <div id="notice" hidden class="notice"></div>
+      <div id="error" hidden class="error"></div>
+
+      <section class="grid" id="charts" aria-label="Registry summary"></section>
+    </main>
+
+    <script type="module" src="assets/dashboard.js"></script>
+  </body>
+</html>

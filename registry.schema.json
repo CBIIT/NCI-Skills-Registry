@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/CBIIT/NCI-Skills-Registry/main/registry.schema.json",
+  "title": "NCI Application Registry",
+  "type": "object",
+  "required": ["schemaVersion", "apps"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "updated": { "type": "string", "description": "ISO date the registry was last changed" },
+    "apps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/app" }
+    }
+  },
+  "$defs": {
+    "app": {
+      "type": "object",
+      "required": ["id", "name", "deploymentType", "status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Stable kebab-case identifier"
+        },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+
+        "owner": { "type": "string" },
+        "ownerOffice": { "type": "string", "description": "Division, office or centre" },
+        "contactEmail": { "type": "string" },
+        "securityOfficer": { "type": "string", "description": "ISSO, or 'unknown'" },
+
+        "repository": { "type": "string", "description": "http(s) URL, or 'unknown'" },
+        "url": { "type": "string", "description": "Where the running application can be reached, if deployed" },
+
+        "deploymentType": {
+          "enum": [
+            "local",
+            "cloud-one",
+            "cloud-two",
+            "servicenow",
+            "nidap",
+            "power-platform",
+            "unknown"
+          ]
+        },
+        "cloudTier": {
+          "type": "string",
+          "description": "Sandbox, Development, Stage, Production, or 'not yet deployed'"
+        },
+        "stackName": { "type": "string" },
+
+        "status": {
+          "enum": [
+            "planning",
+            "in-development",
+            "deployed-lower",
+            "deployed-stage",
+            "deployed-production"
+          ]
+        },
+
+        "healthCheckUrl": {
+          "type": ["string", "null"],
+          "description": "Absolute http(s) URL, or null when the app has no health check"
+        },
+        "healthStatus": {
+          "enum": ["ok", "degraded", "unreachable", "none"],
+          "description": "Last observed result. 'none' means no health check exists."
+        },
+        "healthCheckedAt": { "type": ["string", "null"] },
+
+        "audience": { "enum": ["self", "named-group", "nci-wide", "public", "unknown"] },
+        "requiresSignIn": { "type": ["boolean", "null"] },
+        "dataSensitivity": { "enum": ["public", "internal", "pii-phi", "unknown"] },
+
+        "createdDate": { "type": "string" },
+        "skillsUsed": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
