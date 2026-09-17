@@ -68,6 +68,28 @@
       "dataSensitivity": "public",
       "createdDate": "2026-09-17",
       "skillsUsed": ["nci-startup", "hello-world-web-app", "cloud-one-github-actions-lambda-deployment"]
+    },
+    {
+      "id": "tenth-test",
+      "name": "Tenth Test",
+      "description": "A Python Flask web application for NCI, targeting Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/Tenth-Test",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "tenth-test-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "unknown",
+      "requiresSignIn": null,
+      "dataSensitivity": "unknown",
+      "createdDate": "2026-09-17",
+      "skillsUsed": ["nci-startup", "hello-world-web-app", "cloud-one-github-actions-lambda-deployment"]
     }
   ]
 }
