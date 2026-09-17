@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-10",
-  "_comment": "The first two entries are real. Every entry whose id begins with 'sample-' is fictional data used to exercise the dashboard, and should be removed before this is used for anything.",
+  "updated": "2026-09-17",
+  "_comment": "Entries whose id begins with 'sample-' are fictional data used to exercise the dashboard, and should be removed before this is used for anything.",
   "apps": [
     {
       "id": "nci-application-registry",
@@ -46,6 +46,28 @@
       "createdDate": "unknown",
       "skillsUsed": [],
       "url": "https://kg20xc62dl.execute-api.us-east-2.amazonaws.com/dev/dashboard"
+    },
+    {
+      "id": "seventh-try",
+      "name": "Seventh Try",
+      "description": "Testing the works",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/Seventh-Try",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "seventh-try-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "unknown",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-09-17",
+      "skillsUsed": ["nci-startup", "hello-world-web-app", "cloud-one-github-actions-lambda-deployment"]
     },
     {
       "id": "sample-cohort-browser",
