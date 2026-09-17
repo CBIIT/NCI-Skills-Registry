@@ -67,7 +67,11 @@
       "requiresSignIn": false,
       "dataSensitivity": "public",
       "createdDate": "2026-09-17",
-      "skillsUsed": ["nci-startup", "hello-world-web-app", "cloud-one-github-actions-lambda-deployment"]
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     },
     {
       "id": "tenth-test",
@@ -79,17 +83,22 @@
       "securityOfficer": "unknown",
       "repository": "https://github.com/CBIIT/Tenth-Test",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "tenth-test-dev",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
-      "audience": "unknown",
-      "requiresSignIn": null,
-      "dataSensitivity": "unknown",
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://gzppnb5nwk.execute-api.us-east-1.amazonaws.com/dev/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-09-17T19:48:57Z",
+      "audience": "public",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
       "createdDate": "2026-09-17",
-      "skillsUsed": ["nci-startup", "hello-world-web-app", "cloud-one-github-actions-lambda-deployment"]
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ],
+      "url": "https://gzppnb5nwk.execute-api.us-east-1.amazonaws.com/dev/"
     }
   ]
 }
