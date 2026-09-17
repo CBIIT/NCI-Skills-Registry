@@ -1,4 +1,6 @@
-// Loads registry.json and derives the three dashboard dimensions.
+// Loads the GitHub registry and derives the three dashboard dimensions.
+
+const REGISTRY_URL = "https://raw.githubusercontent.com/CBIIT/NCI-Skills-Registry/main/registry.json";
 
 export const DEPLOYMENT_TYPES = [
   { value: "local", label: "Local only" },
@@ -53,7 +55,7 @@ export function labelFor(dimension, value) {
 }
 
 export async function loadRegistry() {
-  const response = await fetch("registry.json", { cache: "no-store" });
+  const response = await fetch(`${REGISTRY_URL}?t=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Could not load registry.json (HTTP ${response.status})`);
   }
