@@ -316,6 +316,32 @@
       "dataSensitivity": "internal",
       "createdDate": "2026-08-12",
       "skillsUsed": ["nci-startup"]
+    },
+    {
+      "id": "eighth-try",
+      "name": "Eighth Try",
+      "description": "Eighth try",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/Eighth-Try",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "eighth-try-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "unknown",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-09-17",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     }
   ]
 }
