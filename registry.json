@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
@@ -99,6 +99,32 @@
         "cloud-one-github-actions-lambda-deployment"
       ],
       "url": "https://gzppnb5nwk.execute-api.us-east-1.amazonaws.com/dev/"
+    },
+    {
+      "id": "eleventh-try",
+      "name": "Eleventh Try",
+      "description": "A Python Flask web application for NCI, targeting Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/Eleventh-Try",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "eleventh-try-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "unknown",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-09-18",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     }
   ]
 }
