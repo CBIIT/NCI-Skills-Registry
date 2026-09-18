@@ -153,6 +153,32 @@
         "cloud-one-github-actions-nodejs-lambda-deployment"
       ],
       "url": "https://gxxc5kk9pe.execute-api.us-east-1.amazonaws.com/dev/"
+    },
+    {
+      "id": "thirteenth-try",
+      "name": "Thirteenth Try",
+      "description": "A Node.js web application for NCI, targeting Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/Thirteenth-Try",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "thirteenth-try-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "unknown",
+      "requiresSignIn": null,
+      "dataSensitivity": "unknown",
+      "createdDate": "2026-09-18",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-nodejs-lambda-deployment"
+      ]
     }
   ]
 }
