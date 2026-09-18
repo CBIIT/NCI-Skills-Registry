@@ -137,12 +137,12 @@
       "securityOfficer": "unknown",
       "repository": "https://github.com/CBIIT/Twelfth-Try",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "twelfth-try-dev",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://gxxc5kk9pe.execute-api.us-east-1.amazonaws.com/dev/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-09-18T17:43:59Z",
       "audience": "unknown",
       "requiresSignIn": null,
       "dataSensitivity": "unknown",
@@ -150,8 +150,9 @@
       "skillsUsed": [
         "nci-startup",
         "hello-world-web-app",
-        "cloud-one-github-actions-lambda-deployment"
-      ]
+        "cloud-one-github-actions-nodejs-lambda-deployment"
+      ],
+      "url": "https://gxxc5kk9pe.execute-api.us-east-1.amazonaws.com/dev/"
     }
   ]
 }
