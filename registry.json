@@ -110,13 +110,13 @@
       "securityOfficer": "unknown",
       "repository": "https://github.com/CBIIT/Eleventh-Try",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "eleventh-try-dev",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
-      "audience": "unknown",
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://3c4o8tgaul.execute-api.us-east-1.amazonaws.com/dev/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-09-18T14:36:31Z",
+      "audience": "public",
       "requiresSignIn": false,
       "dataSensitivity": "public",
       "createdDate": "2026-09-18",
@@ -124,7 +124,8 @@
         "nci-startup",
         "hello-world-web-app",
         "cloud-one-github-actions-lambda-deployment"
-      ]
+      ],
+      "url": "https://3c4o8tgaul.execute-api.us-east-1.amazonaws.com/dev/"
     }
   ]
 }
