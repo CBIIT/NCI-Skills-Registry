@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+:root { --ink: #25313c; --muted: #586775; --rule: #d8e0e5; --blue: #3264bd; --green: #167969; --rose: #a14a75; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: #f5f7f8; font: 15px/1.5 'IBM Plex Sans', sans-serif; letter-spacing: 0; }
+a { color: var(--blue); text-underline-offset: 4px; }
+.masthead { padding: 18px 32px; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 20px; background: white; }
+.brand { color: var(--ink); font-weight: 700; text-decoration: none; }
+.brand span { margin-left: 12px; font-weight: 400; }
+nav { display: flex; gap: 24px; flex-wrap: wrap; }
+nav a { text-decoration: none; }
+nav a[aria-current] { color: var(--ink); font-weight: 600; }
+main { max-width: 1440px; margin: auto; padding: 32px; }
+.page-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.eyebrow { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; color: var(--muted); }
+h1 { font-size: 32px; line-height: 1.2; margin: 0; font-weight: 600; }
+.status { font-size: 12px; color: var(--muted); border-left: 3px solid #b58935; padding-left: 12px; }
+.summary { margin: 12px 0 24px; color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 12px 28px; border-top: 1px solid var(--rule); padding: 16px 0; font-size: 13px; }
+.legend span { display: flex; align-items: center; gap: 8px; }
+.line { width: 26px; border-top: 2px solid; }
+.line.ai { color: var(--rose); border-top-style: dashed; }
+.line.code { color: var(--blue); }
+.line.data { color: var(--green); }
+figure { margin: 0; }
+.diagram-scroll { overflow: auto; background: #fff; background-image: radial-gradient(#e8ecef .6px, transparent .6px); background-size: 16px 16px; border: 1px solid var(--rule); }
+svg { display: block; width: 100%; min-width: 1100px; height: auto; font-family: 'IBM Plex Sans', sans-serif; }
+.zone { fill: #fff; stroke: #8b98a3; stroke-width: 1.2; }
+.local-zone { stroke: #677d8a; }
+.github-zone { stroke: #657080; }
+.zone-heading { font-size: 16px; font-weight: 600; fill: #25313c; }
+.service { font-size: 15px; font-weight: 600; fill: #25313c; }
+.sub { font-size: 13px; fill: #586775; }
+.boundary-note { font-size: 12px; fill: #586775; }
+.divider { stroke: #dce3e8; }
+.workstation { stroke: #586775; stroke-width: 2; fill: none; }
+.code-flow, .code-bus { stroke: #3264bd; stroke-width: 1.6; fill: none; }
+.code-flow { marker-end: url(#code-arrow); }
+.ai-flow { stroke: #a14a75; stroke-width: 1.6; stroke-dasharray: 5 4; fill: none; marker-end: url(#ai-arrow); }
+.data-flow-path { stroke: #167969; stroke-width: 1.6; fill: none; marker-end: url(#data-arrow); }
+.data-label { fill: #167969; }
+.flow-label { font-size: 12px; fill: #586775; }
+.bus-label { font-size: 14px; fill: #3264bd; }
+.aws-cloud { fill: none; stroke: #778592; stroke-width: 1; stroke-dasharray: 6 4; }
+.cloud-heading { font-size: 14px; font-weight: 600; fill: #25313c; }
+.account { fill: white; stroke: #a6b3bd; }
+.sandbox-rule { stroke: #bd8d2c; stroke-width: 4; }
+.dev-rule { stroke: #3264bd; stroke-width: 4; }
+.prod-rule { stroke: #167969; stroke-width: 4; }
+.account-heading { font-size: 19px; font-weight: 600; fill: #25313c; }
+.tag { font-size: 11px; fill: #586775; }
+.foot-label { font-size: 13px; fill: #586775; }
+figcaption { color: var(--muted); font-size: 13px; padding: 12px 0 24px; }
+.transfers { border-top: 1px solid var(--rule); padding-top: 20px; }
+h2 { margin: 0 0 16px; font-size: 18px; font-weight: 600; }
+dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin: 0; }
+dt { font-weight: 600; margin-bottom: 8px; }
+dd { margin: 0; color: var(--muted); font-size: 14px; }
+footer { margin-top: 28px; padding: 16px 0; border-top: 1px solid var(--rule); font-size: 12px; color: var(--muted); }
+footer p { margin: 0 0 8px; }
+@media (max-width: 700px) {
+  .masthead { padding: 16px 20px; flex-direction: column; gap: 12px; }
+  main { padding: 24px 20px; }
+  .page-heading { align-items: start; flex-direction: column; gap: 4px; }
+  h1 { font-size: 28px; }
+  dl { grid-template-columns: 1fr; gap: 20px; }
+}
+@media print {
+  .masthead, nav { display: none; }
+  main { padding: 0; }
+  .diagram-scroll { overflow: visible; }
+  svg { min-width: 0; }
+}
