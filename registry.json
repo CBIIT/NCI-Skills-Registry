@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-18",
+  "updated": "2026-09-24",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
@@ -180,6 +180,31 @@
         "cloud-one-github-actions-nodejs-lambda-deployment"
       ],
       "url": "https://8pkjdiysp5.execute-api.us-east-1.amazonaws.com/dev/"
+    },
+    {
+      "id": "fifteenth-try",
+      "name": "Fifteenth Try",
+      "description": "A Python MCP server for NCI, targeting Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@mail.nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/Fifteenth-Try",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "fifteenth-try-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "unknown",
+      "requiresSignIn": null,
+      "dataSensitivity": "unknown",
+      "createdDate": "2026-09-24",
+      "skillsUsed": [
+        "nci-startup",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     }
   ]
 }
