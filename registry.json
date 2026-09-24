@@ -191,12 +191,12 @@
       "securityOfficer": "unknown",
       "repository": "https://github.com/CBIIT/Fifteenth-Try",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "fifteenth-try-dev",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://pel27ys9oj.execute-api.us-east-1.amazonaws.com/dev/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-09-24T14:16:54Z",
       "audience": "unknown",
       "requiresSignIn": null,
       "dataSensitivity": "unknown",
@@ -204,7 +204,8 @@
       "skillsUsed": [
         "nci-startup",
         "cloud-one-github-actions-lambda-deployment"
-      ]
+      ],
+      "url": "https://pel27ys9oj.execute-api.us-east-1.amazonaws.com/dev/"
     }
   ]
 }
