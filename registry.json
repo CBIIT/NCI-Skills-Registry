@@ -267,6 +267,32 @@
         "cloud-one-github-actions-lambda-deployment"
       ],
       "url": "https://5alekmq8yi.execute-api.us-east-1.amazonaws.com/dev/"
+    },
+    {
+      "id": "nineteenth-try",
+      "name": "Nineteenth Try",
+      "description": "A Python Flask hello-world web application for NCI, planned for Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@mail.nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/nci-ai-nineteenth-try",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "nineteenth-try-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "unknown",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-09-29",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     }
   ]
 }
