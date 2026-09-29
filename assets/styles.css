@@ -190,8 +190,21 @@ svg a:focus-visible {
   color: var(--muted);
 }
 
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+
+.table-scroll:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 table {
   width: 100%;
+  min-width: 920px;
   border-collapse: collapse;
   background: var(--card);
   border: 1px solid var(--line);

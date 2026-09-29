@@ -4,6 +4,7 @@ const REGISTRY_URL = "https://raw.githubusercontent.com/CBIIT/NCI-Skills-Registr
 
 export const DEPLOYMENT_TYPES = [
   { value: "local", label: "Local only" },
+  { value: "github-pages", label: "GitHub Pages" },
   { value: "cloud-one", label: "Cloud One" },
   { value: "cloud-two", label: "Cloud Two" },
   { value: "servicenow", label: "ServiceNow" },

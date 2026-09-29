@@ -36,6 +36,7 @@
         "deploymentType": {
           "enum": [
             "local",
+            "github-pages",
             "cloud-one",
             "cloud-two",
             "servicenow",

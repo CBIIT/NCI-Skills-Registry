@@ -1,28 +1,32 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-24",
+  "updated": "2026-09-29",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
       "id": "nci-application-registry",
       "name": "NCI Application Registry",
       "description": "This dashboard. Records which applications exist across NCI, how they are deployed, and whether they are responding.",
-      "owner": "unknown",
+      "owner": "Lawrence Brem",
       "ownerOffice": "CBIIT",
-      "contactEmail": "unknown",
+      "contactEmail": "breml@mail.nih.gov",
       "securityOfficer": "unknown",
       "repository": "https://github.com/CBIIT/NCI-Skills-Registry",
-      "deploymentType": "local",
-      "cloudTier": "not yet deployed",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
-      "audience": "nci-wide",
+      "deploymentType": "github-pages",
+      "cloudTier": "not applicable",
+      "status": "deployed-production",
+      "healthCheckUrl": "https://cbiit.github.io/NCI-Skills-Registry/",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-09-29T12:59:52Z",
+      "audience": "public",
       "requiresSignIn": false,
-      "dataSensitivity": "internal",
+      "dataSensitivity": "public",
       "createdDate": "2026-09-10",
-      "skillsUsed": []
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app"
+      ],
+      "url": "https://cbiit.github.io/NCI-Skills-Registry/"
     },
     {
       "id": "ai-budget-dashboard",
