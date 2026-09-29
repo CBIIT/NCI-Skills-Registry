@@ -1,6 +1,6 @@
-// Loads the GitHub registry and derives the three dashboard dimensions.
+// Loads the registry bundled with this site and derives the dashboard dimensions.
 
-const REGISTRY_URL = "https://raw.githubusercontent.com/CBIIT/NCI-Skills-Registry/main/registry.json";
+const REGISTRY_URL = new URL("../registry.json", import.meta.url);
 
 export const DEPLOYMENT_TYPES = [
   { value: "local", label: "Local only" },

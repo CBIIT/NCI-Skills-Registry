@@ -1,4 +1,4 @@
-import { loadRegistry, tally, DIMENSIONS } from "./registry-data.js";
+import { loadRegistry, tally, DIMENSIONS } from "./registry-data.js?v=20260929b";
 import { donutChart, legend } from "./donut.js";
 
 const CHARTS = [

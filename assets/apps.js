@@ -1,4 +1,4 @@
-import { loadRegistry, filterApps, labelFor, DIMENSIONS } from "./registry-data.js";
+import { loadRegistry, filterApps, labelFor, DIMENSIONS } from "./registry-data.js?v=20260929b";
 
 const COLUMNS = [
   { key: "name", label: "Application" },
