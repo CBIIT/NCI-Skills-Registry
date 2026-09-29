@@ -189,21 +189,21 @@
       "url": "https://8pkjdiysp5.execute-api.us-east-1.amazonaws.com/dev/"
     },
     {
-      "id": "fifteenth-try",
-      "name": "Fifteenth Try",
+      "id": "nci-skills-mcp-github",
+      "name": "NCI-Skills-MCP-Github",
       "description": "A Python MCP server for NCI, targeting Cloud One Development.",
       "owner": "Lawrence Brem",
       "ownerOffice": "CBIIT",
       "contactEmail": "breml@mail.nih.gov",
       "securityOfficer": "unknown",
-      "repository": "https://github.com/CBIIT/Fifteenth-Try",
+      "repository": "https://github.com/CBIIT/NCI-Skills-MCP-Github",
       "deploymentType": "cloud-one",
       "cloudTier": "Development",
-      "stackName": "fifteenth-try-dev",
+      "stackName": "nci-skills-mcp-github-dev",
       "status": "deployed-lower",
-      "healthCheckUrl": "https://pel27ys9oj.execute-api.us-east-1.amazonaws.com/dev/health",
+      "healthCheckUrl": "https://w4vupvccy5.execute-api.us-east-1.amazonaws.com/dev/health",
       "healthStatus": "ok",
-      "healthCheckedAt": "2026-09-24T14:16:54Z",
+      "healthCheckedAt": "2026-09-29T14:25:56Z",
       "audience": "unknown",
       "requiresSignIn": null,
       "dataSensitivity": "unknown",
@@ -212,7 +212,7 @@
         "nci-startup",
         "cloud-one-github-actions-lambda-deployment"
       ],
-      "url": "https://pel27ys9oj.execute-api.us-east-1.amazonaws.com/dev/"
+      "url": "https://w4vupvccy5.execute-api.us-east-1.amazonaws.com/dev/"
     }
   ]
 }
