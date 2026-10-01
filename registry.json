@@ -345,6 +345,34 @@
         "cloud-one-github-actions-java-lambda-deployment"
       ],
       "url": "https://5kc7ecfvzlkvtipyfykhcfn2ku0jajig.lambda-url.us-east-1.on.aws/"
+    },
+    {
+      "id": "twentyfirst-try",
+      "name": "TwentyFirst Try",
+      "description": "A Python web application for NCI, targeting Cloud One Development and requiring NCI/NIH Microsoft Entra sign-in.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@mail.nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/nci-ai-twentyfirst-try",
+      "appType": "website",
+      "language": "python",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "twentyfirst-try-dev",
+      "status": "planning",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "nci-wide",
+      "requiresSignIn": true,
+      "dataSensitivity": "internal",
+      "createdDate": "2026-10-01",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     }
   ]
 }
