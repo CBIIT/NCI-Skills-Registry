@@ -21,6 +21,23 @@ export const STATUSES = [
   { value: "deployed-production", label: "Deployed to production" },
 ];
 
+export const APP_TYPES = [
+  { value: "website", label: "Website" },
+  { value: "rest-api", label: "REST API" },
+  { value: "mcp-server", label: "MCP server" },
+  { value: "script", label: "Script" },
+  { value: "other", label: "Other" },
+];
+
+export const LANGUAGES = [
+  { value: "python", label: "Python" },
+  { value: "typescript", label: "TypeScript" },
+  { value: "javascript", label: "JavaScript" },
+  { value: "java", label: "Java" },
+  { value: "other", label: "Other" },
+  { value: "unknown", label: "Not recorded" },
+];
+
 export const HEALTH_STATES = [
   { value: "responding", label: "Health check responding" },
   { value: "not-responding", label: "Health check not responding" },
@@ -31,6 +48,8 @@ export const DIMENSIONS = {
   deployment: { title: "Deployment type", buckets: DEPLOYMENT_TYPES, of: bucketDeployment },
   health: { title: "Health", buckets: HEALTH_STATES, of: bucketHealth },
   status: { title: "Status", buckets: STATUSES, of: bucketStatus },
+  appType: { title: "Application type", buckets: APP_TYPES, of: bucketAppType },
+  language: { title: "Language", buckets: LANGUAGES, of: bucketLanguage },
 };
 
 function bucketDeployment(app) {
@@ -41,6 +60,16 @@ function bucketDeployment(app) {
 function bucketStatus(app) {
   const value = String(app.status ?? "");
   return STATUSES.some((entry) => entry.value === value) ? value : "planning";
+}
+
+function bucketAppType(app) {
+  const value = String(app.appType ?? "other");
+  return APP_TYPES.some((entry) => entry.value === value) ? value : "other";
+}
+
+function bucketLanguage(app) {
+  const value = String(app.language ?? "unknown");
+  return LANGUAGES.some((entry) => entry.value === value) ? value : "unknown";
 }
 
 // An app counts as monitored only if it declares a health check URL.

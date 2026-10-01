@@ -1,11 +1,10 @@
-import { loadRegistry, filterApps, labelFor, DIMENSIONS } from "./registry-data.js?v=20260929b";
+import { loadRegistry, filterApps, labelFor, DIMENSIONS } from "./registry-data.js?v=20261001";
 
 const COLUMNS = [
   { key: "name", label: "Application" },
   { key: "owner", label: "Owner" },
-  { key: "ownerOffice", label: "Office" },
-  { key: "deploymentType", label: "Deployment", format: (app) => labelFor("deployment", app.deploymentType) },
-  { key: "status", label: "Status", format: (app) => labelFor("status", app.status) },
+  { key: "type", label: "Type" },
+  { key: "deployment", label: "Deployment" },
   { key: "health", label: "Health" },
   { key: "dataSensitivity", label: "Data" },
   { key: "repository", label: "Repository" },
@@ -36,6 +35,36 @@ function pill(text, tone) {
   return span;
 }
 
+// Renders a primary value with a smaller, muted secondary line underneath.
+function twoLineCell(primary, secondary) {
+  const cell = document.createDocumentFragment();
+  cell.append(document.createTextNode(primary || "—"));
+  if (secondary) {
+    const sub = document.createElement("div");
+    sub.className = "cell-sub";
+    sub.textContent = secondary;
+    cell.append(sub);
+  }
+  return cell;
+}
+
+function ownerCell(app) {
+  return twoLineCell(app.owner, app.ownerOffice);
+}
+
+function typeCell(app) {
+  const type = app.appType ? labelFor("appType", app.appType) : null;
+  const language = app.language ? labelFor("language", app.language) : null;
+  return twoLineCell(type ?? "—", language);
+}
+
+function deploymentCell(app) {
+  const deployment = labelFor("deployment", app.deploymentType);
+  const status = labelFor("status", app.status);
+  return twoLineCell(deployment, status);
+}
+
+
 function healthCell(app) {
   const hasCheck = typeof app.healthCheckUrl === "string" && app.healthCheckUrl.trim() !== "";
   const state = HEALTH_PILL[hasCheck ? (app.healthStatus ?? "unreachable") : "none"] ?? HEALTH_PILL.none;
@@ -58,6 +87,9 @@ function healthCell(app) {
 
 function cellFor(app, column) {
   if (column.key === "health") return healthCell(app);
+  if (column.key === "owner") return ownerCell(app);
+  if (column.key === "type") return typeCell(app);
+  if (column.key === "deployment") return deploymentCell(app);
 
   if (column.key === "name") {
     const href = safeUrl(app.url);

@@ -33,6 +33,15 @@
         "repository": { "type": "string", "description": "http(s) URL, or 'unknown'" },
         "url": { "type": "string", "description": "Where the running application can be reached, if deployed" },
 
+        "appType": {
+          "enum": ["website", "rest-api", "mcp-server", "script", "other"],
+          "description": "The kind of application, independent of where it runs"
+        },
+        "language": {
+          "enum": ["python", "typescript", "javascript", "java", "other", "unknown"],
+          "description": "Primary implementation language"
+        },
+
         "deploymentType": {
           "enum": [
             "local",
