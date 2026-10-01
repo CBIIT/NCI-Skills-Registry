@@ -298,28 +298,29 @@
     {
       "id": "twentieth-try",
       "name": "Twentieth Try",
-      "description": "A Java 21 hello-world web application for NCI, targeting Cloud One Development.",
+      "description": "A Java 21 hello-world web application for NCI, deployed to Cloud One Development.",
       "owner": "Lawrence Brem",
       "ownerOffice": "CBIIT",
       "contactEmail": "breml@mail.nih.gov",
       "securityOfficer": "unknown",
       "repository": "https://github.com/CBIIT/nci-ai-twentieth-try",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "twentieth-try-dev",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
-      "audience": "unknown",
-      "requiresSignIn": null,
-      "dataSensitivity": "unknown",
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://5kc7ecfvzlkvtipyfykhcfn2ku0jajig.lambda-url.us-east-1.on.aws/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-10-01T13:16:25Z",
+      "audience": "public",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
       "createdDate": "2026-09-30",
       "skillsUsed": [
         "nci-startup",
         "hello-world-web-app",
         "cloud-one-github-actions-java-lambda-deployment"
-      ]
+      ],
+      "url": "https://5kc7ecfvzlkvtipyfykhcfn2ku0jajig.lambda-url.us-east-1.on.aws/"
     }
   ]
 }
