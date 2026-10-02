@@ -386,12 +386,12 @@
       "appType": "website",
       "language": "python",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "master-project-plan-business-lane-dev",
-      "status": "planning",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://2gzqkysemze7v2ltroecabyieu0threu.lambda-url.us-east-1.on.aws/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-10-02T17:53:05Z",
       "audience": "named-group",
       "requiresSignIn": false,
       "dataSensitivity": "public",
@@ -400,7 +400,8 @@
         "nci-startup",
         "hello-world-web-app",
         "cloud-one-github-actions-lambda-deployment"
-      ]
+      ],
+      "url": "https://2gzqkysemze7v2ltroecabyieu0threu.lambda-url.us-east-1.on.aws/"
     }
   ]
 }
