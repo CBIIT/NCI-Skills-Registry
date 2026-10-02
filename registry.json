@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
@@ -368,6 +368,34 @@
       "requiresSignIn": true,
       "dataSensitivity": "internal",
       "createdDate": "2026-10-01",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
+    },
+    {
+      "id": "master-project-plan-business-lane",
+      "name": "MasterProjectPlan-BusinessLane",
+      "description": "A Python hello-world web application for NCI, targeting Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@mail.nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/nci-ai-master-project-plan-business-lane",
+      "appType": "website",
+      "language": "python",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "master-project-plan-business-lane-dev",
+      "status": "planning",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "named-group",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-10-02",
       "skillsUsed": [
         "nci-startup",
         "hello-world-web-app",
