@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-02",
+  "updated": "2026-10-29",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
@@ -402,6 +402,34 @@
         "cloud-one-github-actions-lambda-deployment"
       ],
       "url": "https://2gzqkysemze7v2ltroecabyieu0threu.lambda-url.us-east-1.on.aws/"
+    },
+    {
+      "id": "claude-try-1",
+      "name": "Claude Try 1",
+      "description": "A Python Flask hello-world web application for NCI, targeting Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@mail.nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/nci-ai-claude-try-1",
+      "appType": "website",
+      "language": "python",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "claude-try-1-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "public",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-10-29",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     }
   ]
 }
