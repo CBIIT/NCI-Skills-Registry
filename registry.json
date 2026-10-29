@@ -406,7 +406,7 @@
     {
       "id": "claude-try-1",
       "name": "Claude Try 1",
-      "description": "A Python Flask hello-world web application for NCI, targeting Cloud One Development.",
+      "description": "Happy Hour Picker for Rio Lakefront: three restaurant choices with shared click counts (Python Flask on Lambda, DynamoDB), deployed to Cloud One Development.",
       "owner": "Lawrence Brem",
       "ownerOffice": "CBIIT",
       "contactEmail": "breml@mail.nih.gov",
@@ -420,7 +420,7 @@
       "status": "deployed-lower",
       "healthCheckUrl": "https://scatulrx65p6h5sjsavg2s737e0uouow.lambda-url.us-east-1.on.aws/health",
       "healthStatus": "ok",
-      "healthCheckedAt": "2026-10-29T13:42:48Z",
+      "healthCheckedAt": "2026-10-29T18:48:29Z",
       "audience": "public",
       "requiresSignIn": false,
       "dataSensitivity": "public",
