@@ -415,12 +415,12 @@
       "appType": "website",
       "language": "python",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "claude-try-1-dev",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://scatulrx65p6h5sjsavg2s737e0uouow.lambda-url.us-east-1.on.aws/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-10-29T13:42:48Z",
       "audience": "public",
       "requiresSignIn": false,
       "dataSensitivity": "public",
@@ -429,7 +429,8 @@
         "nci-startup",
         "hello-world-web-app",
         "cloud-one-github-actions-lambda-deployment"
-      ]
+      ],
+      "url": "https://scatulrx65p6h5sjsavg2s737e0uouow.lambda-url.us-east-1.on.aws/"
     }
   ]
 }
