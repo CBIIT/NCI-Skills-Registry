@@ -50,6 +50,7 @@ header.site p {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 18px;
   margin-top: 14px;
   font-size: 14px;
@@ -563,4 +564,88 @@ tbody tr:last-child td {
   .boundary-notes {
     grid-template-columns: 1fr;
   }
+}
+
+.app-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 20px;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.app-card-head h2 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.app-card-head .pill {
+  flex: none;
+}
+
+.app-card-desc {
+  margin: 0 0 12px;
+  font-size: 13px;
+}
+
+.app-card-body {
+  flex: 1;
+  margin-bottom: 14px;
+}
+
+.card-metrics {
+  margin: 0;
+  font-size: 13px;
+}
+
+.card-metrics div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--track);
+}
+
+.card-metrics dt {
+  color: var(--muted);
+}
+
+.card-metrics dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.app-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-link {
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+a.card-link:hover {
+  background: var(--track);
+}
+
+.card-link.disabled {
+  color: var(--muted);
+  background: var(--track);
+  cursor: not-allowed;
 }

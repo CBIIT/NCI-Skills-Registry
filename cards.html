@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>App cards — NCI Application Registry</title>
+    <link rel="stylesheet" href="assets/styles.css?v=20261105" />
+  </head>
+  <body>
+    <header class="site">
+      <h1>App cards</h1>
+      <p id="subheading">Live status from each application's /api/dashboard, with links to its code, app and dashboard.</p>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Registry</a>
+        <a href="apps.html">Applications</a>
+        <a href="cards.html" aria-current="page">App cards</a>
+        <a href="architecture.html">AWS architecture</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="error" hidden class="error"></div>
+      <section class="app-cards" id="cards" aria-label="Application cards"></section>
+    </main>
+
+    <script type="module" src="assets/cards.js?v=20261105"></script>
+  </body>
+</html>

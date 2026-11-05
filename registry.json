@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-03",
+  "updated": "2026-11-05",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
@@ -421,6 +421,7 @@
       "healthCheckUrl": "https://scatulrx65p6h5sjsavg2s737e0uouow.lambda-url.us-east-1.on.aws/health",
       "healthStatus": "ok",
       "healthCheckedAt": "2026-10-29T18:48:29Z",
+      "dashboardApiUrl": "https://scatulrx65p6h5sjsavg2s737e0uouow.lambda-url.us-east-1.on.aws/api/dashboard",
       "audience": "public",
       "requiresSignIn": false,
       "dataSensitivity": "public",

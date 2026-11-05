@@ -80,6 +80,12 @@
         },
         "healthCheckedAt": { "type": ["string", "null"] },
 
+        "dashboardApiUrl": {
+          "type": ["string", "null"],
+          "pattern": "^https?://.+/api/dashboard$",
+          "description": "Absolute http(s) URL of the app's GET /api/dashboard endpoint (app-dashboard skill, schemaVersion 1). The registry reads it for a live summary. Omit or null when the app has no deployed dashboard."
+        },
+
         "audience": { "enum": ["self", "named-group", "nci-wide", "public", "unknown"] },
         "requiresSignIn": { "type": ["boolean", "null"] },
         "dataSensitivity": { "enum": ["public", "internal", "pii-phi", "unknown"] },
