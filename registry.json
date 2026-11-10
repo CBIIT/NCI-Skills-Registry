@@ -474,12 +474,12 @@
       "appType": "website",
       "language": "python",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
+      "cloudTier": "Development",
       "stackName": "try-30-dev",
-      "status": "planning",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://rdnwqhjq5yselnvh4f2p6nb6yy0dyduu.lambda-url.us-east-1.on.aws/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-11-10T20:27:16Z",
       "audience": "public",
       "requiresSignIn": false,
       "dataSensitivity": "public",
@@ -489,7 +489,9 @@
         "hello-world-web-app",
         "app-dashboard",
         "cloud-one-github-actions-lambda-deployment"
-      ]
+      ],
+      "dashboardApiUrl": "https://rdnwqhjq5yselnvh4f2p6nb6yy0dyduu.lambda-url.us-east-1.on.aws/api/dashboard",
+      "url": "https://rdnwqhjq5yselnvh4f2p6nb6yy0dyduu.lambda-url.us-east-1.on.aws/"
     }
   ]
 }
