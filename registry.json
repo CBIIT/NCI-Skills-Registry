@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-05",
+  "updated": "2026-11-10",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
@@ -459,6 +459,35 @@
       "skillsUsed": [
         "nci-startup",
         "hello-world-web-app",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
+    },
+    {
+      "id": "try-30",
+      "name": "Try 30",
+      "description": "A Python Flask hello-world web application for NCI, targeting Cloud One Development.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@mail.nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/CBIIT/nci-ai-try-30",
+      "appType": "website",
+      "language": "python",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "try-30-dev",
+      "status": "planning",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "public",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-11-10",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "app-dashboard",
         "cloud-one-github-actions-lambda-deployment"
       ]
     }
