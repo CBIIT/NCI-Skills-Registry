@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-11-10",
+  "updated": "2026-11-13",
   "_comment": "This registry contains configured applications only.",
   "apps": [
     {
@@ -492,6 +492,35 @@
       ],
       "dashboardApiUrl": "https://rdnwqhjq5yselnvh4f2p6nb6yy0dyduu.lambda-url.us-east-1.on.aws/api/dashboard",
       "url": "https://rdnwqhjq5yselnvh4f2p6nb6yy0dyduu.lambda-url.us-east-1.on.aws/"
+    },
+    {
+      "id": "dssb-roadmap-2026",
+      "name": "DSSB-Roadmap-2026",
+      "description": "Starter web application for DSSB Roadmap 2026; the initial baseline is a public Hello World site pending roadmap requirements.",
+      "owner": "Lawrence Brem",
+      "ownerOffice": "CBIIT",
+      "contactEmail": "breml@mail.nih.gov",
+      "securityOfficer": "unknown",
+      "repository": "https://github.com/bremonline/nci-ai-dssb-roadmap-2026",
+      "appType": "website",
+      "language": "python",
+      "deploymentType": "cloud-one",
+      "cloudTier": "not yet deployed",
+      "stackName": "dssb-roadmap-2026-dev",
+      "status": "in-development",
+      "healthCheckUrl": null,
+      "healthStatus": "none",
+      "healthCheckedAt": null,
+      "audience": "public",
+      "requiresSignIn": false,
+      "dataSensitivity": "public",
+      "createdDate": "2026-11-13",
+      "skillsUsed": [
+        "nci-startup",
+        "hello-world-web-app",
+        "app-dashboard",
+        "cloud-one-github-actions-lambda-deployment"
+      ]
     }
   ]
 }
