@@ -494,23 +494,23 @@
       "url": "https://rdnwqhjq5yselnvh4f2p6nb6yy0dyduu.lambda-url.us-east-1.on.aws/"
     },
     {
-      "id": "dssb-roadmap-2026",
-      "name": "DSSB-Roadmap-2026",
-      "description": "Starter web application for DSSB Roadmap 2026; the initial baseline is a public Hello World site pending roadmap requirements.",
+      "id": "dssb-roadmap-2027",
+      "name": "DSSB-Roadmap-2027",
+      "description": "Starter web application for DSSB Roadmap 2027; the initial baseline is a public Hello World site pending roadmap requirements.",
       "owner": "Lawrence Brem",
       "ownerOffice": "CBIIT",
       "contactEmail": "breml@mail.nih.gov",
       "securityOfficer": "unknown",
-      "repository": "https://github.com/bremonline/nci-ai-dssb-roadmap-2026",
+      "repository": "https://github.com/CBIIT/nci-ai-dssb-roadmap-2027",
       "appType": "website",
       "language": "python",
       "deploymentType": "cloud-one",
-      "cloudTier": "not yet deployed",
-      "stackName": "dssb-roadmap-2026-dev",
-      "status": "in-development",
-      "healthCheckUrl": null,
-      "healthStatus": "none",
-      "healthCheckedAt": null,
+      "cloudTier": "Development",
+      "stackName": "dssb-roadmap-2027-dev",
+      "status": "deployed-lower",
+      "healthCheckUrl": "https://xa573cap4myv6lpq3ftfjoj4mi0nivtx.lambda-url.us-east-1.on.aws/health",
+      "healthStatus": "ok",
+      "healthCheckedAt": "2026-11-13T15:58:00Z",
       "audience": "public",
       "requiresSignIn": false,
       "dataSensitivity": "public",
@@ -520,7 +520,9 @@
         "hello-world-web-app",
         "app-dashboard",
         "cloud-one-github-actions-lambda-deployment"
-      ]
+      ],
+      "dashboardApiUrl": "https://xa573cap4myv6lpq3ftfjoj4mi0nivtx.lambda-url.us-east-1.on.aws/api/dashboard",
+      "url": "https://xa573cap4myv6lpq3ftfjoj4mi0nivtx.lambda-url.us-east-1.on.aws/"
     }
   ]
 }
